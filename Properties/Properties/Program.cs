@@ -6,7 +6,8 @@ namespace Properties
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var person = new Person(new DateTime(1996, 10, 17));
+            Console.WriteLine(person.Age);
         }
     }
 }
