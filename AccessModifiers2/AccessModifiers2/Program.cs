@@ -7,7 +7,7 @@ namespace AccessModifiers2
         static void Main(string[] args)
         {
             var customer = new Customer();
-            Amazon.RateCalculator();
+            Amazon.RateCalculator calculator = new RateCalculator();
         }
     }
 }
