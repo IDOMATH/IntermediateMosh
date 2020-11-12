@@ -2,9 +2,9 @@
 {
     public class WorkflowEngine
     {
-        public void Execute(Workflow workflow)
+        public void Execute(IWorkflow workflow)
         {
-            var activites = workflow.GetActivites();
+            var activites = workflow.GetActivities();
             foreach (var activity in activites)
             {
                 activity.Execute();

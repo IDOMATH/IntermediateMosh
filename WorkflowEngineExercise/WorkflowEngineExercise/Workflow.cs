@@ -2,7 +2,7 @@
 
 namespace WorkflowEngineExercise
 {
-    public class Workflow
+    public class Workflow : IWorkflow
     {
         private readonly IList<IActivity> _activities;
         public Workflow()
@@ -13,7 +13,8 @@ namespace WorkflowEngineExercise
         {
             _activities.Add(activity);
         }
-        public IList<IActivity> GetActivites()
+
+        public IList<IActivity> GetActivities()
         {
             return _activities;
         }
