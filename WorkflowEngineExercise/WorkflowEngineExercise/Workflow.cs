@@ -14,7 +14,7 @@ namespace WorkflowEngineExercise
             _activities.Add(activity);
         }
 
-        public IList<IActivity> GetActivities()
+        public IEnumerable<IActivity> GetActivities()
         {
             return _activities;
         }
